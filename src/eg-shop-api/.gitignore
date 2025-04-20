@@ -1,9 +1,0 @@
-# .NET Core
-/bin/
-/obj/
-/*.dll
-/*.exe
-/*.pdb
-/*.user
-/*.tmp
-/*.log
