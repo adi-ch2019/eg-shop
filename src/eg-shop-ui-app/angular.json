@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "eg-shop-ui-test": {
+    "eg-shop-ui-app": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/eg-shop-ui-test",
+            "outputPath": "dist/eg-shop-ui-app",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -59,10 +59,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "eg-shop-ui-test:build:production"
+              "buildTarget": "eg-shop-ui-app:build:production"
             },
             "development": {
-              "buildTarget": "eg-shop-ui-test:build:development"
+              "buildTarget": "eg-shop-ui-app:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -92,8 +92,5 @@
         }
       }
     }
-  },
-  "cli": {
-    "analytics": false
   }
 }
