@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\adi-ch2019\\eg-shop\\tests\\unit\\eg-shop-test\\eg-shop-test.csproj": {}
+    "C:\\adi-ch2019\\eg-shop\\tests\\unit\\eg-shop-api-test\\eg-shop-api-test.csproj": {}
   },
   "projects": {
-    "C:\\adi-ch2019\\eg-shop\\tests\\unit\\eg-shop-test\\eg-shop-test.csproj": {
+    "C:\\adi-ch2019\\eg-shop\\tests\\unit\\eg-shop-api-test\\eg-shop-api-test.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\adi-ch2019\\eg-shop\\tests\\unit\\eg-shop-test\\eg-shop-test.csproj",
-        "projectName": "eg-shop-test",
-        "projectPath": "C:\\adi-ch2019\\eg-shop\\tests\\unit\\eg-shop-test\\eg-shop-test.csproj",
+        "projectUniqueName": "C:\\adi-ch2019\\eg-shop\\tests\\unit\\eg-shop-api-test\\eg-shop-api-test.csproj",
+        "projectName": "eg-shop-api-test",
+        "projectPath": "C:\\adi-ch2019\\eg-shop\\tests\\unit\\eg-shop-api-test\\eg-shop-api-test.csproj",
         "packagesPath": "C:\\Users\\adich\\.nuget\\packages\\",
-        "outputPath": "C:\\adi-ch2019\\eg-shop\\tests\\unit\\eg-shop-test\\obj\\",
+        "outputPath": "C:\\adi-ch2019\\eg-shop\\tests\\unit\\eg-shop-api-test\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\adich\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -43,14 +43,6 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
-            "MSTest.TestAdapter": {
-              "target": "Package",
-              "version": "[3.1.1, )"
-            },
-            "MSTest.TestFramework": {
-              "target": "Package",
-              "version": "[3.1.1, )"
-            },
             "Microsoft.NET.Test.Sdk": {
               "target": "Package",
               "version": "[17.8.0, )"
@@ -58,6 +50,14 @@
             "coverlet.collector": {
               "target": "Package",
               "version": "[6.0.0, )"
+            },
+            "xunit": {
+              "target": "Package",
+              "version": "[2.5.3, )"
+            },
+            "xunit.runner.visualstudio": {
+              "target": "Package",
+              "version": "[2.5.3, )"
             }
           },
           "imports": [

@@ -1,13 +1,7 @@
-.add-btn {
-    background-color: green;
-    color: white;
-    border: none;
-    cursor: pointer;
-  }
-  
-  .cart-btn {
-    background-color: blue;
-    color: white;
-    border: none;
-    cursor: pointer;
-  }
+table {
+  width: 100%;
+}
+
+button {
+  margin: 0 5px;
+}

@@ -1,7 +1,29 @@
-<ag-grid-angular 
-  style="width: 600px; height: 400px;" 
-  class="ag-theme-alpine"
-  [modules]="modules"
-  [rowData]="rowData"
-  [columnDefs]="columnDefs">
-</ag-grid-angular>
+<table mat-table [dataSource]="vegetables" class="mat-elevation-z8">
+
+  <!-- Vegetable Name Column -->
+  <ng-container matColumnDef="name">
+    <th mat-header-cell *matHeaderCellDef> Vegetable </th>
+    <td mat-cell *matCellDef="let vegetable"> {{ vegetable.name }} </td>
+  </ng-container>
+
+  <!-- Quantity Column with Action Buttons -->
+  <ng-container matColumnDef="quantity">
+    <th mat-header-cell *matHeaderCellDef> Quantity </th>
+    <td mat-cell *matCellDef="let vegetable">
+      <button mat-button color="primary" (click)="decreaseQuantity(vegetable.name)">➖</button>
+      {{ vegetable.quantity }}
+      <button mat-button color="primary" (click)="increaseQuantity(vegetable.name)">➕</button>
+    </td>
+  </ng-container>
+
+  <!-- Actions Column -->
+  <ng-container matColumnDef="actions">
+    <th mat-header-cell *matHeaderCellDef> Actions </th>
+    <td mat-cell *matCellDef="let vegetable">
+      <button mat-raised-button color="accent">🛒 Add to Cart</button>
+    </td>
+  </ng-container>
+
+  <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+  <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+</table>

@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
-import { AgGridModule } from 'ag-grid-angular';
-import { ColDef } from 'ag-grid-community';
-import { ClientSideRowModelModule } from 'ag-grid-community';
+import { MatTableModule } from '@angular/material/table';
+import { MatButtonModule } from '@angular/material/button';
 
 interface Vegetable {
   name: string;
@@ -11,27 +10,25 @@ interface Vegetable {
 @Component({
   selector: 'app-vegetable-grid',
   standalone: true,
-  imports: [AgGridModule], // Remove incorrect usage of ClientSideRowModelModule here
+  imports: [MatTableModule, MatButtonModule],
   templateUrl: './vegetable-grid.component.html',
   styleUrls: ['./vegetable-grid.component.css']
 })
 export class VegetableGridComponent {
-  columnDefs: ColDef<Vegetable>[] = [
-    { field: 'name', headerName: 'Vegetable', sortable: true, filter: true },
-    { field: 'quantity', headerName: 'Quantity' },
-    {
-      headerName: 'Actions',
-      cellRenderer: () => {
-        return `<button class="cart-btn" onclick="addToCart()">🛒 Add to Cart</button>`;
-      }
-    }
-  ];
-
-  rowData: Vegetable[] = [
+  displayedColumns: string[] = ['name', 'quantity', 'actions'];
+  vegetables: Vegetable[] = [
     { name: 'Carrot', quantity: 0 },
     { name: 'Broccoli', quantity: 0 },
     { name: 'Spinach', quantity: 0 }
   ];
 
-  modules = [ClientSideRowModelModule]; // This is the correct way to register the row model
+  increaseQuantity(name: string) {
+    const item = this.vegetables.find(v => v.name === name);
+    if (item) item.quantity++;
+  }
+
+  decreaseQuantity(name: string) {
+    const item = this.vegetables.find(v => v.name === name);
+    if (item && item.quantity > 0) item.quantity--;
+  }
 }

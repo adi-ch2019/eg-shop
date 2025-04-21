@@ -5,7 +5,7 @@ import { VegetableGridComponent } from './vegetable-grid/vegetable-grid.componen
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, VegetableGridComponent], // Include VegetableGridComponent
+  imports: [RouterOutlet, VegetableGridComponent],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
