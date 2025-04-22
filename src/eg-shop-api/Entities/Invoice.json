@@ -1,0 +1,35 @@
+{
+    "customer": 35496,
+    "invoice_number": 854124,
+    "items": [
+      {
+        "name": "Milk",
+        "description": "The best of cows",
+        "quantity": 3,
+        "unit_price": 3.00,
+        "adjusted_price": 3.60,
+        "total_price": 10.80
+      },
+      {
+        "name": "Bread",
+        "description": "Easy toast",
+        "quantity": 1,
+        "unit_price": 2.00,
+        "adjusted_price": 2.40,
+        "total_price": 2.40
+      },
+      {
+        "name": "Eggs",
+        "description": "Wild chicken",
+        "quantity": 1,
+        "unit_price": 2.50,
+        "adjusted_price": 3.00,
+        "total_price": 3.00
+      }
+    ],
+    "loyalty_membership": {
+      "name": "EasyGroceries Loyalty Membership",
+      "price": 5.00
+    },
+    "total": 21.20
+  }

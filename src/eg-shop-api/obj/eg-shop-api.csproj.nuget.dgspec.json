@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\adi-ch2019\\eg-shop\\src\\eg-shop-api\\eg-shop-api.csproj": {}
+    "C:\\eg-shop\\src\\eg-shop-api\\eg-shop-api.csproj": {}
   },
   "projects": {
-    "C:\\adi-ch2019\\eg-shop\\src\\eg-shop-api\\eg-shop-api.csproj": {
+    "C:\\eg-shop\\src\\eg-shop-api\\eg-shop-api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\adi-ch2019\\eg-shop\\src\\eg-shop-api\\eg-shop-api.csproj",
+        "projectUniqueName": "C:\\eg-shop\\src\\eg-shop-api\\eg-shop-api.csproj",
         "projectName": "eg-shop-api",
-        "projectPath": "C:\\adi-ch2019\\eg-shop\\src\\eg-shop-api\\eg-shop-api.csproj",
+        "projectPath": "C:\\eg-shop\\src\\eg-shop-api\\eg-shop-api.csproj",
         "packagesPath": "C:\\Users\\adich\\.nuget\\packages\\",
-        "outputPath": "C:\\adi-ch2019\\eg-shop\\src\\eg-shop-api\\obj\\",
+        "outputPath": "C:\\eg-shop\\src\\eg-shop-api\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\adich\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -43,6 +43,10 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "MediatR": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            },
             "Microsoft.AspNetCore.OpenApi": {
               "target": "Package",
               "version": "[8.0.15, )"
