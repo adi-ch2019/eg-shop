@@ -22,6 +22,10 @@ builder.Services.AddScoped<InventoryService>();
 builder.Services.AddScoped<PaymentService>();
 builder.Services.AddScoped<ShippingService>();
 
+// Register Grocery services
+builder.Services.AddSingleton<EgShopApi.Domain.IGroceryRepository, EgShopApi.Infrastructure.InMemoryGroceryRepository>();
+builder.Services.AddScoped<EgShopApi.Application.IGroceryService, EgShopApi.Application.GroceryService>();
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
