@@ -26,6 +26,9 @@ builder.Services.AddScoped<ShippingService>();
 builder.Services.AddSingleton<EgShopApi.Domain.IGroceryRepository, EgShopApi.Infrastructure.InMemoryGroceryRepository>();
 builder.Services.AddScoped<EgShopApi.Application.IGroceryService, EgShopApi.Application.GroceryService>();
 
+// Add controllers
+builder.Services.AddControllers();
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -56,6 +59,8 @@ app.MapGet("/weatherforecast", () =>
 })
 .WithName("GetWeatherForecast")
 .WithOpenApi();
+
+app.MapControllers();
 
 app.Run();
 
