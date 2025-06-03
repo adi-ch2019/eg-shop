@@ -589,11 +589,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\eg-shop\\src\\eg-shop-api\\eg-shop-api.csproj",
+      "projectUniqueName": "C:\\adi-ch2019\\eg-shop\\src\\eg-shop-api\\eg-shop-api.csproj",
       "projectName": "eg-shop-api",
-      "projectPath": "C:\\eg-shop\\src\\eg-shop-api\\eg-shop-api.csproj",
+      "projectPath": "C:\\adi-ch2019\\eg-shop\\src\\eg-shop-api\\eg-shop-api.csproj",
       "packagesPath": "C:\\Users\\adich\\.nuget\\packages\\",
-      "outputPath": "C:\\eg-shop\\src\\eg-shop-api\\obj\\",
+      "outputPath": "C:\\adi-ch2019\\eg-shop\\src\\eg-shop-api\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\adich\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -657,7 +657,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.408/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.410/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "PZTdhbXEwDA=",
+  "dgSpecHash": "hKWs8o8eFxQ=",
   "success": true,
-  "projectFilePath": "C:\\eg-shop\\src\\eg-shop-api\\eg-shop-api.csproj",
+  "projectFilePath": "C:\\adi-ch2019\\eg-shop\\src\\eg-shop-api\\eg-shop-api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\adich\\.nuget\\packages\\mediatr\\12.0.1\\mediatr.12.0.1.nupkg.sha512",
     "C:\\Users\\adich\\.nuget\\packages\\mediatr.contracts\\2.0.1\\mediatr.contracts.2.0.1.nupkg.sha512",
