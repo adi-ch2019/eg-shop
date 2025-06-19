@@ -1,8 +1,3 @@
-using System.Collections.Generic;
-using System.Threading.Tasks;
-using EgShopApi.Domain;
-using EgShopApi.Domain.Entities;
-
 namespace EgShopApi.Application
 {
     public class GroceryService : IGroceryService

@@ -1,7 +1,3 @@
-using System.Collections.Generic;
-using System.Threading.Tasks;
-using EgShopApi.Domain.Entities;
-
 namespace EgShopApi.Application
 {
     public interface IGroceryService

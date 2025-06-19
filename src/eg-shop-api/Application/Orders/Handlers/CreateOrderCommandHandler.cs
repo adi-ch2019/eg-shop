@@ -1,8 +1,3 @@
-using MediatR;
-using EgShopApi.Application.Orders.Commands;
-using System.Threading;
-using System.Threading.Tasks;
-
 namespace EgShopApi.Application.Orders.Handlers
 {
     public class CreateOrderCommandHandler : IRequestHandler<CreateOrderCommand, int>

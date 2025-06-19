@@ -1,9 +1,3 @@
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using EgShopApi.Domain;
-using EgShopApi.Domain.Entities;
-
 namespace EgShopApi.Infrastructure
 {
     public class InMemoryGroceryRepository : IGroceryRepository

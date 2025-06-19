@@ -1,8 +1,3 @@
-using MediatR;
-using Microsoft.AspNetCore.Mvc;
-using EgShopApi.Application.Orders.Commands;
-using System.Threading.Tasks;
-
 namespace EgShopApi.WebApi.Controllers
 {
     [ApiController]

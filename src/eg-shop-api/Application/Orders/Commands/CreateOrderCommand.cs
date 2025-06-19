@@ -1,6 +1,3 @@
-using MediatR;
-using EgShopApi.Domain.Entities;
-
 namespace EgShopApi.Application.Orders.Commands
 {
     public class CreateOrderCommand : IRequest<int>

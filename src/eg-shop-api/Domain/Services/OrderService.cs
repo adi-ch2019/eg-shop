@@ -1,8 +1,3 @@
-using System.Collections.Generic;
-using System.IO;
-using System.Text.Json;
-using System.Threading.Tasks;
-
 namespace EgShopApi.Domain.Services
 {
     public class OrderService
