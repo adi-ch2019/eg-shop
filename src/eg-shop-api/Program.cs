@@ -27,7 +27,11 @@ builder.Services.AddSingleton<EgShopApi.Domain.IGroceryRepository, EgShopApi.Inf
 builder.Services.AddScoped<EgShopApi.Application.IGroceryService, EgShopApi.Application.GroceryService>();
 
 // Add controllers
-builder.Services.AddControllers();
+// Register global exception filter
+builder.Services.AddControllers(options =>
+{
+    options.Filters.Add<EgShopApi.WebApi.Filters.GlobalExceptionFilter>();
+});
 
 var app = builder.Build();
 
